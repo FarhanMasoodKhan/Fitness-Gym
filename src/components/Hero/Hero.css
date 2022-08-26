@@ -18,6 +18,11 @@
     background-color: var(--orange);
 }
 
+
+.btn-j:hover {
+    background-color: var(--lightgray);
+}
+
 .the-best-ad {
     margin-top: 4rem;
     background-color: #363d42;
@@ -129,6 +134,10 @@
 
 .heart-rate>img {
     width: 2rem;
+}
+
+.heart-rate>img:hover {
+    transform: scale(1.1);
 }
 
 .heart-rate>:nth-child(2) {

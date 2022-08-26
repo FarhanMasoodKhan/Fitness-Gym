@@ -66,7 +66,7 @@ const Hero = () => {
     </div>
       <div className="right-h">
         {/* join now btn */}
-        <button className='btn'> Join Now</button>
+        <button className='btn btn-j'> Join Now</button>
         {/* Heart rate box */}
         <div className="heart-rate">
           <img src={heart} alt="" />
