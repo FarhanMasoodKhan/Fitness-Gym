@@ -1,8 +1,9 @@
-# The Fit Club
+# The Fit Club - React App
 
-#Languages used
-JavaScript , HTML , CSS, ReactJs
+# Languages Used
+JavaScript , HTML , CSS, ReactJs, Email Intergration, Animations
 
-## Yarn Start
+## Yarn Start - to start the project
 
-![Screenshot 2022-08-25 153348](https://user-images.githubusercontent.com/58627451/186642740-6a16963d-d979-4734-b46b-acd85691df24.png)
+
+![Screenshot 2022-08-26 135448](https://user-images.githubusercontent.com/58627451/186866935-bab62265-d5c8-48a1-9b69-b6dbb66783dd.png)
