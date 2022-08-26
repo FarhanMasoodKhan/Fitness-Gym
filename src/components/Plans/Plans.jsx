@@ -7,6 +7,9 @@ import whitetick from '../../assets/whiteTick.png'
 const Plans = () => {
   return (
     <div className="Plans-container">
+        <div className="blur blur-plans1"></div>
+        <div className="blur blur-plans2"></div>
+
         <div className="programs-header">
             <span className='stroke-text'>Ready to Start</span>
             <span> Your journey</span>
