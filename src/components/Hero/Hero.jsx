@@ -8,12 +8,14 @@ import heart from '../../assets/heart.png';
 import calories from '../../assets/calories.png';
 
 import {motion} from 'framer-motion';
+import NumberCounter from 'number-counter';
 
 const Hero = () => {
   const transition = {type: 'spring', duration : 5 }
+  const mobile = window.innerWidth <= 768 ? true : false;
 
   return (
-  <div className='hero'>
+  <div className='hero' id='home'>
       <div className="blur blur-hero"></div>
     <div className="left-h">
       {/* Header */}
@@ -22,7 +24,7 @@ const Hero = () => {
         <div className="the-best-ad">
           {/* Motion */}
           <motion.div
-            initial={{left: '238px'}}
+            initial={{left: mobile? '170px' : '238px' }}
             whileInView={{left: '8px'}}
             transition={{...transition, type: 'tween'}}>
           </motion.div>
@@ -48,15 +50,24 @@ const Hero = () => {
       {/* Figures */}
         <div className="figures">
           <div> 
-            <span>130+</span>
+            <span>
+              <NumberCounter end={150} start={100} delay='3' 
+              postFix="+"/>
+            </span>
             <span>Expert coaches</span>
           </div>
           <div> 
-            <span>1050+</span>
+            <span>
+            <NumberCounter end={1050} start={750} delay='2' 
+              postFix="+"/>
+            </span>
             <span>members joined</span>
           </div>
           <div> 
-            <span>60+</span>
+            <span>
+            <NumberCounter end={70} start={20} delay='2' 
+              postFix="+"/>
+            </span>
             <span>Fitness Programs</span>
           </div>
         </div>

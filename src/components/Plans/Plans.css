@@ -90,3 +90,18 @@
     top: 10rem;
     right: 0rem;
 }
+
+
+/*  responsive */
+
+@media screen and (max-width: 768px) {
+
+    .plans {
+        flex-direction: column;
+    }
+
+    .plans>:nth-child(2) {
+        transform: none;
+    }
+
+}

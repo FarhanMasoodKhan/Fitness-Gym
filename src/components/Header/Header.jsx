@@ -1,20 +1,71 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Header.css'
 import Logo from '../../assets/logo.png';
+import bars from '../../assets/bars.png';
+import { Link } from 'react-scroll';
 
 const Header = () => {
+  const mobile = window.innerWidth <= 768 ? true : false;
+  const [MenuOpen, setMenuOpen] = useState(false);
   return (
     <div className='header'>
     
         <img src={Logo} alt="logo" className='logo' />
+          {(MenuOpen === false && mobile === true ) ? (
 
-        <ul className='header-menu'>
-            <li>Home</li>
-            <li>Programs</li>
-            <li>Why us</li>
-            <li>Plans</li>
-            <li>Testimonials</li>
-        </ul>
+          <div style={{backgroundColor: 'var(--appColor)',
+           padding: '0.5rem', borderRadius:'5px', }}
+           onClick={()=> setMenuOpen(true) } >
+
+            <img src={bars} alt="" 
+            style={{width: '1.5rem', height: '1.5rem' }}/>
+
+          </div>
+
+          ) : (  
+          <ul className='header-menu'>
+            <li> 
+              <Link 
+              onClick={()=> setMenuOpen (false)}
+              activeClass="active"
+              to='home'  spy={true} smooth={true}>
+              Home
+              </Link>
+            </li>
+
+            <li> 
+              <Link 
+              onClick={()=> setMenuOpen (false)}
+              to='programs'  spy={true} smooth={true}>
+              Programs
+              </Link>
+            </li>
+
+            <li> 
+              <Link 
+              onClick={()=> setMenuOpen (false)}
+              to='reasons'  spy={true} smooth={true}>
+              Why us
+              </Link>
+            </li>
+
+            <li> 
+              <Link 
+              onClick={()=> setMenuOpen (false)}
+              to='plans'  spy={true} smooth={true}>
+              Plans
+              </Link>
+            </li>
+            
+            <li> 
+              <Link 
+              onClick={()=> setMenuOpen (false)}
+              to='testimonials'  spy={true} smooth={true}>
+              Testimonials
+              </Link>
+            </li>
+          </ul>
+        )}
     </div>
   )
 }

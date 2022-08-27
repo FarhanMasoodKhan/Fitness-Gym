@@ -212,3 +212,91 @@
     color: white;
     transition: 300ms all;
 }
+
+/*  responsive */
+
+
+@media screen and (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .blur-hero {
+        width: 14rem;
+    }
+
+    .the-best-ad {
+        margin-top: 0rem;
+        font-size: small;
+        align-self: center;
+        transform: scale(0.8);
+    }
+
+    .hero-text {
+        font-size: xx-large;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-text>div:nth-of-type(3) {
+        font-size: small;
+        font-weight: 200;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .figures>div>span:nth-of-type(1) {
+        font-size: large;
+    }
+
+    .figures>div>span:nth-of-type(2) {
+        font-size: small;
+    }
+
+    .right-h {
+        position: relative;
+        background: none;
+    }
+
+    .heart-rate {
+        left: 1rem;
+        top: 2rem;
+    }
+
+    .calories {
+        position: relative;
+        top: 5rem;
+        left: 10rem;
+    }
+
+    .calories>img {
+        width: 2rem;
+    }
+
+    .calories>div> :nth-child(2) {
+        color: #fff;
+        font-size: 1rem;
+    }
+
+    .hero-image {
+        position: relative;
+        width: 15rem;
+        align-self: center;
+        left: 8rem;
+        top: 4rem;
+    }
+
+    .hero-image-back {
+        width: 15rem;
+        left: 2rem;
+        top: 0rem;
+    }
+
+    .btn-learn,
+    .btn-started {
+        padding: 0.5rem;
+        font-weight: 500;
+    }
+
+}

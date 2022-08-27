@@ -19,3 +19,19 @@
     color: var(--orange);
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+    .header>:nth-child(2) {
+        position: fixed;
+        z-index: 99;
+        right: 2rem;
+    }
+
+    .header-menu {
+        flex-direction: column;
+        background-color: var(--appColor);
+        padding: 2rem;
+    }
+
+
+}

@@ -13,7 +13,7 @@ const Testimonials = () => {
   const tLength = testimonialsData.length;
 
   return (
-    <div className="Testimonials">
+    <div className="testimonials" id='testimonials'>
 
         <div className="left-t">
             <span>Testimonials</span>

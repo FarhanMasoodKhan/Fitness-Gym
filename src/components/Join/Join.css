@@ -51,3 +51,32 @@
 .btn-join:hover {
     transform: scale(1.05);
 }
+
+/* responsive */
+
+
+@media screen and (max-width: 768px) {
+    .Join {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .left-j {
+        font-size: x-large;
+        flex-direction: column;
+    }
+
+    .right-j {
+        padding: 2rem;
+    }
+
+    .email-container {
+        gap: 2rem;
+        padding: 0.4rem 2rem;
+    }
+
+    .btn-join {
+        padding: 0.2rem 1rem;
+        font-size: small;
+    }
+}
